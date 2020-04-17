@@ -1,6 +1,6 @@
 # Automated Irrigation System - Database
 
-This database is part of a project that aims automating a irrigation system. Therefor,e this solution contains the executions of irrigation and the components related to it.
+This database is part of a project that aims automating a irrigation system. Therefore, this solution contains the executions of irrigation and the components related to it.
 
 ## Schemas
 
