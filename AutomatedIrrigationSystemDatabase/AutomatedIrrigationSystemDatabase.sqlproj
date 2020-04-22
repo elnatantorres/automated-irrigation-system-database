@@ -73,5 +73,6 @@
     <Build Include="dbo\Tables\SolenoidValve.sql" />
     <Build Include="Security\auth.sql" />
     <Build Include="dbo\Tables\IrrigationSystem.sql" />
+    <Build Include="dbo\Tables\PlantationType.sql" />
   </ItemGroup>
 </Project>
