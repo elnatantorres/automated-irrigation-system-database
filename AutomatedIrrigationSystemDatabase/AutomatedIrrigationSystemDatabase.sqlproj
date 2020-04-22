@@ -56,5 +56,22 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Security\" />
+    <Folder Include="auth" />
+    <Folder Include="auth\Tables" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="auth\Tables\User.sql" />
+    <Build Include="dbo\Tables\Controller.sql" />
+    <Build Include="dbo\Tables\IrrigationExecution.sql" />
+    <Build Include="dbo\Tables\Irrigator.sql" />
+    <Build Include="dbo\Tables\Plantation.sql" />
+    <Build Include="dbo\Tables\Sensor.sql" />
+    <Build Include="dbo\Tables\SensorType.sql" />
+    <Build Include="dbo\Tables\SolenoidValve.sql" />
+    <Build Include="Security\auth.sql" />
+    <Build Include="dbo\Tables\IrrigationSystem.sql" />
   </ItemGroup>
 </Project>
