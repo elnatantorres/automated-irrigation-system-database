@@ -6,6 +6,8 @@
     [UserIdentifier] UNIQUEIDENTIFIER NOT NULL,
     [IsActive]       BIT              DEFAULT ((1)) NOT NULL,
     [ModifiedAt]     DATETIME2 (7)    DEFAULT (getutcdate()) NOT NULL,
-    CONSTRAINT [pk_User] PRIMARY KEY CLUSTERED ([Id] ASC)
+
+    CONSTRAINT [pk_User] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [fk_User_Role] FOREIGN KEY ([RoleId]) REFERENCES [auth].[Role] ([Id])
 );
 
